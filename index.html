@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display&display=swap"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a15e3d4aa6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
@@ -19,19 +18,35 @@
   <header>
     <div class="header">
       <div class="logo"><img src="images/Logo.svg" alt="Logo"></div>
-      <nav>
+
+      <div class="nav-menu">
+        <nav>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">works</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+            <a href="#"><img src="images/Icon color.svg" alt="search"></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="menu">
+      <input type="checkbox" id="menu" hidden>
+        <label class="button" for="menu">
+          <span><img src="images/Menu Icon.png" alt="menu"></span>
+        </label>
+
+      <nav class="burger">
         <ul>
           <li><a href="#">home</a></li>
           <li><a href="#">about</a></li>
           <li><a href="#">works</a></li>
           <li><a href="#">blog</a></li>
           <li><a href="#">contact</a></li>
-          <a href="#"><img src="images/Icon color.svg" alt="search"></a>
         </ul>
       </nav>
-      <div class="menu"> 
-        <img src="images/Menu Icon.png" alt="menu"> 
-      </div>
     </div>
   </header>
 
@@ -83,7 +98,9 @@
             <p>Interface Design</p>
             <p>8 June, 2020</p>
           </span>
-          <span class="photo-h2"><h2>UX traffic light colours</h2></span>
+          <span class="photo-h2">
+            <h2>UX traffic light colours</h2>
+          </span>
           <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
         </div>
         <div class="photo-2">
@@ -92,7 +109,9 @@
             <p>Technology</p>
             <p>6 May, 2020</p>
           </span>
-          <span class="photo-h2"><h2>Using UX Design to Build a Sustainable Future</h2></span>
+          <span class="photo-h2">
+            <h2>Using UX Design to Build a Sustainable Future</h2>
+          </span>
           <p>Transformation has to be driven by everybody, not just by climate groups.</p>
         </div>
         <div class="photo-2">
@@ -101,8 +120,10 @@
             <p>Visual Design</p>
             <p>8 June, 2020</p>
           </span>
-          <span class="photo-h2"><h2>Creativity vs. UX</h2></span>
-          <p>Is it possible to create a delightful user experience without following best 
+          <span class="photo-h2">
+            <h2>Creativity vs. UX</h2>
+          </span>
+          <p>Is it possible to create a delightful user experience without following best
             UX practices?</p>
         </div>
       </div>

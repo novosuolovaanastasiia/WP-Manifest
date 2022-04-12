@@ -11,23 +11,23 @@ body {
 
 .header {
   display: flex;
-  padding-left: 11%;
-  padding-right: 11%;
+  justify-content: space-between;
+  margin-left: 11%;
+  margin-right: 11%;
 }
 
 .header .logo {
   margin-top: 100px;
-  padding-right: 27.5%;
 }
 
-.header nav {
-  width: 100%;
+.nav-menu {
   margin-top: 96px;
 }
 
 .header ul {
   display: flex;
-  justify-content: space-between;
+  gap: 4%;
+  justify-content: flex-end;
 }
 
 .header ul>li {
@@ -47,7 +47,7 @@ body {
   font-size: 13px;
 }
 
-.menu {
+.menu .button {
   display: none;
 }
 
@@ -56,7 +56,7 @@ h1 {
   Font-size: 48px;
   Line-height: 64px;
   padding-left: 11%;
-  padding-top: 128px;
+  margin-top: 228px;
   letter-spacing: 0.3rem;
   font-weight: 400;
 }
@@ -257,23 +257,41 @@ h1 {
 .media a:hover {
   border-bottom: 1px solid black;
 }
+.burger{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  box-shadow: 0px 2px 20px  #565656;
+  transform: translateY(-20px);
+}
+.burger>ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.burger ul>li {
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 3%;
+}
+
+.burger li>a:hover {
+  border-bottom: 2px solid black;
+  transition: all 0.2s;
+}
+
+.burger li>a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
 
 @media screen and (max-width: 900px) {
-  .header nav {
-    display: none;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .header .menu {
-    display: flex;
-    margin-top: 82px;
-  }
-
   h1 {
     font-size: 42px;
     margin-right: 11%;
@@ -298,6 +316,32 @@ h1 {
     width: 100%;
   }
 
+}
+
+@media screen and (max-width:768px) {
+  .nav-menu {
+    display: none; 
+  }
+
+  .menu .button {
+    display: inline-block;
+    margin-left: 84%;
+    transform: translateY(-30px);
+  }
+
+  .button img {
+    width: 40px;
+    height: 40px;
+  }
+
+  :checked ~.burger {
+    display: block;
+    transition: all 0.3s;
+  }
+
+  h1 {
+    margin-top: 80px;
+  }
 }
 
 @media screen and (max-width:660px) {
@@ -340,7 +384,6 @@ h1 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    /* justify-content: flex-start; */
     height: 586px;
   }
 
