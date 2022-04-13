@@ -391,7 +391,13 @@ h1 {
   }
 }
 
-@media screen and (max-width:660px) and (min-width:623px) {
+@media screen and (max-width:692px) {
+  :checked ~.burger {
+    height: 464px;
+  }
+}
+
+@media screen and (max-width:660px) {
   :checked ~.burger {
     height: 400px;
     z-index: 20;
@@ -489,16 +495,18 @@ h1 {
   }
 }
 
-@media screen and (max-width:622px) and (min-width:475px) {
-  :checked~.burger {
+@media screen and (max-width:639px) {
+  :checked ~.burger {
     height: 464px;
     z-index: 20;
   }
 }
 
-@media screen and (max-width:474px) {
+@media screen and (max-width:560px) {
   :checked~.burger {
-    height: 528px;
+    height: 464px;
+    width: 60%;
+    text-align: center;
     z-index: 20;
   }
 }
@@ -507,6 +515,8 @@ h1 {
 @media screen and (max-width:460px) {
   :checked~.burger {
     height: 464px;
+    width: 80%;
+    text-align: center;
     z-index: 20;
   }
 
@@ -547,3 +557,23 @@ h1 {
     object-fit: cover;
   }
 }
+
+@media screen and (max-width:407px) {
+  :checked~.burger {
+    height: 528px;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+  }
+} 
+
+@media screen and (max-width:345px) {
+  :checked~.burger {
+    height: 592px;
+    z-index: 20;
+  }
+
+  .media {
+    margin-top: 90px;
+  }
+} 
